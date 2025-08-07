@@ -4,7 +4,7 @@ export default function Banner() {
   return (
     <div
       className="relative h-[100vh] bg-cover bg-center flex items-center justify-center "
-      style={{ backgroundImage: `url('/banner.png')` }}
+      style={{ backgroundImage: `url('/assets/banner.png')` }}
     >
       {/* Overlay for darker effect */}
       <div className="absolute inset-0 bg-opacity-50 "></div>
@@ -22,7 +22,7 @@ export default function Banner() {
             </span>
           </Link>
           <Link href="/learn-more">
-            <span className="hidden md:inline-block text-[#8d493a] px-6 font-bold py-3 rounded border border-white">
+            <span className="hidden md:inline-block text-white hover:text-[#ad5744] px-6 font-bold py-3 rounded border border-white hover:bg-white">
               Explore Expertise
             </span>
           </Link>
