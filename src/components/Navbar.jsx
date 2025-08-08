@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Menu, X } from "lucide-react"; // For hamburger icons
+import { Menu, X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -58,27 +59,47 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu Dropdown */}
-      {menuOpen && (
-        <div className="md:hidden px-4 pt-4 pb-6 text-center space-y-4 bg-white dark:bg-gray-900 shadow">
-          {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              className="block text-gray-700 dark:text-gray-200 hover:text-blue-600"
-              onClick={() => setMenuOpen(false)}
-            >
-              {link.name}
-            </Link>
-          ))}
-          <Link
-            href="/contact"
-            className="block bg-[#8d493a] text-white text-center px-4 py-2 rounded hover:bg-blue-700"
-            onClick={() => setMenuOpen(false)}
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
+            className="md:hidden px-4 pt-4 pb-6 text-center space-y-4 bg-[#f8ede3] shadow text-black overflow-hidden"
           >
-            Contact us
-          </Link>
-        </div>
-      )}
+            {navLinks.map((link) => (
+              <motion.div
+                key={link.name}
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.3 }}
+              >
+                <Link
+                  href={link.href}
+                  className="block hover:text-blue-600"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {link.name}
+                </Link>
+              </motion.div>
+            ))}
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.3, delay: 0.1 }}
+            >
+              <Link
+                href="/contact"
+                className="block bg-[#8d493a] text-white text-center px-4 py-2 rounded hover:bg-blue-700"
+                onClick={() => setMenuOpen(false)}
+              >
+                Contact us
+              </Link>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 }
