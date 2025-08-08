@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import NewsCard from "./NewsCard";
+import NewsCard from "../newsCard/NewsCard";
 
 export default function News() {
   const [news, setNews] = useState([]);
@@ -15,9 +15,9 @@ export default function News() {
       });
   }, []);
   return (
-    <div>
-      <p className="text-red-800">news</p>
-      <div className="md:flex justify-between items-center">
+    <div className="my-16 w-11/12 mx-auto">
+      <p className="text-red-800 my-8">news</p>
+      <div className="md:flex justify-between items-center my-10">
         <h2 className="text-red-800 text-5xl w-2/6">
           Stay Inspired with Interior Trends
         </h2>

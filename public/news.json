@@ -1,42 +1,42 @@
 [
   {
     "id": 1,
-    "image": "https://via.placeholder.com/400x200?text=News+1",
+    "image": "/assets/news/news-1.png",
     "date": "2025-08-07",
     "heading": "Bangladesh Launches New Satellite",
     "summary": "Bangladesh successfully launched its second communication satellite, expanding its presence in the space industry and boosting national telecom capabilities."
   },
   {
     "id": 2,
-    "image": "https://via.placeholder.com/400x200?text=News+2",
+    "image": "/assets/news/news-2.png",
     "date": "2025-08-06",
     "heading": "Heavy Rain Causes Flood in Northern Region",
     "summary": "Continuous rainfall has led to flooding in several northern districts. Relief operations are underway, and citizens are advised to remain cautious."
   },
   {
     "id": 3,
-    "image": "https://via.placeholder.com/400x200?text=News+3",
+    "image": "/assets/news/news-3.png",
     "date": "2025-08-05",
     "heading": "Dhaka Metro Rail Adds New Stations",
     "summary": "Dhaka Metro Rail now includes three new stations, reducing commute time for thousands of passengers and easing city traffic congestion."
   },
   {
     "id": 4,
-    "image": "https://via.placeholder.com/400x200?text=News+4",
+    "image": "/assets/news/news-4.png",
     "date": "2025-08-04",
     "heading": "Bangladeshi Students Win Global Robotics Contest",
     "summary": "A team of students from Bangladesh earned first place in an international robotics competition held in Japan, showcasing innovation and talent."
   },
   {
     "id": 5,
-    "image": "https://via.placeholder.com/400x200?text=News+5",
+    "image": "/assets/news/news-5.png",
     "date": "2025-08-03",
     "heading": "Fuel Prices Adjusted by Government",
     "summary": "The government has announced a new pricing policy for fuel, with slight reductions aiming to stabilize market inflation and aid transportation sectors."
   },
   {
     "id": 6,
-    "image": "https://via.placeholder.com/400x200?text=News+6",
+    "image": "/assets/news/news-6.png",
     "date": "2025-08-02",
     "heading": "National Budget 2025-26 Announced",
     "summary": "The Finance Minister unveiled the national budget for 2025-26, focusing on education, healthcare, and digital transformation initiatives."
