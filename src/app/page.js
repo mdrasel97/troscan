@@ -2,7 +2,7 @@ import Image from "next/image";
 import Banner from "./pages/Banner";
 import About from "./pages/About";
 import Expertise from "./pages/Expertise";
-import NewsCard from "./pages/NewsCard";
+import News from "./pages/News";
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
       <Banner />
       <About />
       <Expertise />
-      <NewsCard />
+      <News />
     </div>
   );
 }
