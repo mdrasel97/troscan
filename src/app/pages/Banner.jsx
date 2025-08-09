@@ -1,4 +1,6 @@
+"use client";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Banner() {
   return (
@@ -11,9 +13,17 @@ export default function Banner() {
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4">
-        <h1 className="text-4xl md:text-6xl md:w-4/6 mx-auto font-bold mb-6">
+        <motion.h1
+          className="text-4xl md:text-6xl md:w-4/6 mx-auto font-bold mb-6"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.8,
+            ease: "easeOut",
+          }}
+        >
           Timeless Comfort & Endless Luxury
-        </h1>
+        </motion.h1>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link href="/get-started">

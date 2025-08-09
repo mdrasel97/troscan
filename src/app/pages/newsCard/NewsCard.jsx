@@ -6,7 +6,7 @@ const NewsCard = ({ item }) => {
   // console.log(item);
   return (
     <div>
-      <Link href={`/news/${item.id}`}>
+      <Link href={""}>
         <div className="max-w-sm rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
           <div className="overflow-hidden">
             <img

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Facebook, Twitter, Instagram, Github } from "lucide-react";
+import { Facebook, Instagram, Github, Linkedin } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -46,16 +46,28 @@ export default function Footer() {
             <div className="flex flex-col items-center space-y-4">
               <h3 className="font-semibold text-lg">Follow Us</h3>
               <div className="flex space-x-4">
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://web.facebook.com/mollarasel24/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Facebook className="w-5 h-5 hover:text-blue-600" />
                 </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  <Twitter className="w-5 h-5 hover:text-blue-400" />
+                <a
+                  href="https://www.linkedin.com/in/rasel-developer/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Linkedin className="w-5 h-5 hover:text-blue-400" />
                 </a>
                 <a href="#" target="_blank" rel="noopener noreferrer">
                   <Instagram className="w-5 h-5 hover:text-pink-500" />
                 </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://github.com/mdrasel97"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Github className="w-5 h-5 hover:text-gray-700 dark:hover:text-white" />
                 </a>
               </div>
@@ -67,22 +79,22 @@ export default function Footer() {
               <ul className="space-y-1">
                 <li>
                   <Link href="/about" className="hover:text-blue-600">
-                    About
+                    License
                   </Link>
                 </li>
                 <li>
                   <Link href="/Projects" className="hover:text-blue-600">
-                    Projects
+                    Grainient
                   </Link>
                 </li>
                 <li>
                   <Link href="/news" className="hover:text-blue-600">
-                    News
+                    Inspirux
                   </Link>
                 </li>
                 <li>
                   <Link href="/contact" className="hover:text-blue-600">
-                    Contact
+                    Store
                   </Link>
                 </li>
               </ul>

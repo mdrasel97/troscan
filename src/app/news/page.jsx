@@ -1,10 +1,17 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import NewsCard from "../pages/newsCard/NewsCard";
 
-export default async function NewsPage() {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/news.json`);
-  const allNews = await res.json();
-  //   console.log(allNews);
+export default function NewsPage() {
+  const [allNews, setAllNews] = useState([]);
+
+  useEffect(() => {
+    fetch("/news.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setAllNews(data);
+      });
+  }, []);
   return (
     <div className="">
       <div className="w-[900px] mx-auto h-[400px] flex items-center justify-center">
